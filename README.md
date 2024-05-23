@@ -19,6 +19,7 @@ cd vpn-checker
 ```
 
 ## Directory Structure
+```
 vpn-checker/
 ├── known-vpn/
 │   ├── vpn-list.txt
@@ -26,6 +27,7 @@ vpn-checker/
 ├── input.txt
 ├── vpn.py
 └── README.md
+```
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details. 
