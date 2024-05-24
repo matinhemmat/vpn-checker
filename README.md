@@ -2,11 +2,20 @@
 
 This script checks your list of IP addresses against known VPN IP addresses to determine if they are VPNs. This is not a complete list of VPNs, but it is a good starting point. The script will output any IP addresses that are part of the VPNs CIDR blocks. If IPs are not then they will get diregarded via `/dev/null`.
 
-This script is useful for identifying VPNs in logs or other data sources. For your convenience, new IP addresses can be added to the `known-vpn/vpn-manual.txt` file.
+This script is useful for identifying VPNs in logs or other data sources. For your convenience, new VPN IP addresses can be added to the `known-vpn/vpn-manual.txt` file.
 
 Contributions are welcome! Please submit a pull request with any updates to the code or additions to the known-vpn/vpn-list.txt file. Please include the source of the IP addresses in the comments.
 
+## Installation
+Clone the repository:
+
+```bash
+git clone https://github.com/Dan-Duran/vpn-checker.git
+cd vpn-checker
+```
 ## Usage
+The input.txt file is juat a placeholder where you can put your list of IP addresses to be checked. The script will work with any file and files extension (ex python3 vpn.py input.csv or python3 vpn.py my-ip-list.txt)
+
 ### Linux & MacOS
 ```bash
 python3 vpn.py input.txt
@@ -16,13 +25,6 @@ python3 vpn.py input.txt
 python vpn.py input.txt
 ```
 
-## Installation
-Clone the repository:
-
-```bash
-git clone https://github.com/Dan-Duran/vpn-checker.git
-cd vpn-checker
-```
 ## Requierements
 
 - Python 3.3 and above (The ipaddress module is part of the Python standard library and does not need to be installed separately)
