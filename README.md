@@ -1,8 +1,10 @@
 # VPN Checker
 
-This script checks a list of IP addresses against known VPN IP addresses to determine if they are VPNs. This is not a complete list of VPNs, but it is a good starting point. The script will output any IP addresses that are not VPNs to `/dev/null`. This script is useful for identifying VPNs in logs or other data sources. New IP addresses can be added to the `known-vpn/vpn-manual.txt` file.
+This script checks your list of IP addresses against known VPN IP addresses to determine if they are VPNs. This is not a complete list of VPNs, but it is a good starting point. The script will output any IP addresses that are part of the VPNs CIDR blocks. If IPs are not then they will get diregarded via `/dev/null`.
 
-Contributions are welcome. Please submit a pull request with any updates or additions to the known-vpn/vpn-list.txt file. Please include the source of the IP addresses in the comments.
+This script is useful for identifying VPNs in logs or other data sources. For your convenience, new IP addresses can be added to the `known-vpn/vpn-manual.txt` file.
+
+Contributions are welcome! Please submit a pull request with any updates to the code or additions to the known-vpn/vpn-list.txt file. Please include the source of the IP addresses in the comments.
 
 ## Usage
 
