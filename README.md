@@ -19,7 +19,10 @@ Clone the repository:
 git clone https://github.com/yourusername/vpn-checker.git
 cd vpn-checker
 ```
+## Requierements
 
+- Python 3.3 and above (The ipaddress module is part of the Python standard library and does not need to be installed separately)
+  
 ## Directory Structure
 ```
 vpn-checker/
