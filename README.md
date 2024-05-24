@@ -6,7 +6,7 @@ Everytime the script is ran, it will check for the latest updates to the known-v
 
 This script is useful for identifying VPNs in logs or other data sources. For your convenience, new VPN IP addresses can be added to the `known-vpn/vpn-manual.txt` file.
 
-Contributions are welcome! Please submit a pull request with any updates to the code or additions to the known-vpn/vpn-list.txt file. Please include the source of the IP addresses in the comments.
+All contributions to the known-vpn/vpn-list.txt file must include IP addresses in CIDR notation to precisely define the network range. This can range from specific single IP addresses noted as /32 to broader network ranges, potentially as expansive as /0. This ensures that our matching logic accurately identifies VPN traffic by covering the correct network segments. When adding IP addresses, please use the appropriate CIDR block that best represents the network scope of the VPN service. 
 
 ## Installation
 Clone the repository:
