@@ -16,7 +16,7 @@ python3 vpn.py <input.txt>
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/vpn-checker.git
+git clone https://github.com/Dan-Duran/vpn-checker.git
 cd vpn-checker
 ```
 ## Requierements
