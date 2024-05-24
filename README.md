@@ -7,9 +7,13 @@ This script is useful for identifying VPNs in logs or other data sources. For yo
 Contributions are welcome! Please submit a pull request with any updates to the code or additions to the known-vpn/vpn-list.txt file. Please include the source of the IP addresses in the comments.
 
 ## Usage
-
+### Linux & MacOS
 ```bash
-python3 vpn.py <input.txt>
+python3 vpn.py input.txt
+```
+### Windows
+```bash
+python vpn.py input.txt
 ```
 
 ## Installation
